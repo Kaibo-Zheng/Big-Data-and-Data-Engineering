@@ -1,0 +1,12 @@
+﻿group,code,name,count,percent,denominator,source
+label,0,human,3994,0.3234008097165992,12350,result/submissions/submit.jsonl
+label,1,machine,4003,0.32412955465587046,12350,result/submissions/submit.jsonl
+label,2,hybrid,4353,0.35246963562753036,12350,result/submissions/submit.jsonl
+family,0,OpenAI,354,0.08843367474394204,4003,result/submissions/submit.jsonl
+family,1,Alibaba,633,0.15813140144891333,4003,result/submissions/submit.jsonl
+family,2,DeepSeek,559,0.13964526605046215,4003,result/submissions/submit.jsonl
+family,3,ByteDance,487,0.12165875593305021,4003,result/submissions/submit.jsonl
+family,4,Moonshot,550,0.13739695228578566,4003,result/submissions/submit.jsonl
+family,5,Google,458,0.11441418935798152,4003,result/submissions/submit.jsonl
+family,6,Anthropic,494,0.12340744441668748,4003,result/submissions/submit.jsonl
+family,7,xAI,468,0.11691231576317762,4003,result/submissions/submit.jsonl

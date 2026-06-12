@@ -1,0 +1,2 @@
+﻿model,train_rows,valid_rows,family_train_rows,max_features,family_max_features,min_df,accuracy,macro_f1,weighted_f1,detect_macro_f1,source_macro_f1,official_final_score
+tfidf_sgd_multitask,79040,19760,25600,200000,120000,2,0.8936234817813765,0.8945221860251862,0.8933519493394736,0.8945221860251862,0.7078950258389971,0.8571967539879484

@@ -1,0 +1,58 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments and local configuration
+.venv/
+venv/
+env/
+.env
+.env.*
+
+# Logs and experiment trackers
+logs/
+*.log
+wandb/
+runs/
+
+# Generated analysis artifacts
+analysis/
+visualization/figures/
+Illustration/logos/
+
+# Local datasets. Keep these out of Git because they are large release files.
+data/*.jsonl
+
+# Local base model weights. The model directory keeps configs/tokenizer metadata.
+model/pytorch_model.bin
+model/.msc
+model/.mv
+
+# Generic large training artifacts
+*.pt
+*.pth
+*.ckpt
+checkpoint-*/
+
+# OS and editor metadata
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# LaTeX build outputs
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.toc

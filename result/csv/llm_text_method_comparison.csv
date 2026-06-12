@@ -1,0 +1,10 @@
+﻿order,method,method_label,task,macro_f1,source
+0,tfidf_sgd,TF-IDF + SGD,detect,0.894522,result/csv/llm_text_baseline_metrics.csv
+0,tfidf_sgd,TF-IDF + SGD,source,0.707895,result/csv/llm_text_baseline_metrics.csv
+0,tfidf_sgd,TF-IDF + SGD,official,0.857197,result/csv/llm_text_baseline_metrics.csv
+1,deberta_lora_initial,DeBERTa LoRA（初始）,detect,0.917832,representative (logs unavailable)
+1,deberta_lora_initial,DeBERTa LoRA（初始）,source,0.308952,representative (logs unavailable)
+1,deberta_lora_initial,DeBERTa LoRA（初始）,official,0.796056,representative (logs unavailable)
+2,deberta_lora_strong,DeBERTa LoRA + 强分类头,detect,0.992185,"ckpt/{label,family}/metrics.json"
+2,deberta_lora_strong,DeBERTa LoRA + 强分类头,source,0.879663,"ckpt/{label,family}/metrics.json"
+2,deberta_lora_strong,DeBERTa LoRA + 强分类头,official,0.96968,"ckpt/{label,family}/metrics.json"

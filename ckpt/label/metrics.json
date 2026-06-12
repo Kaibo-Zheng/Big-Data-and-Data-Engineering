@@ -1,0 +1,12 @@
+{
+  "accuracy": 0.9921052631578947,
+  "macro_f1": 0.9921845578411275,
+  "task": "label",
+  "epoch": 7,
+  "global_step": 9730,
+  "train_rows": 88920,
+  "valid_rows": 9880,
+  "max_length": 384,
+  "lora_r": 16,
+  "world_size": 4
+}

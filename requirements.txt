@@ -1,0 +1,19 @@
+# PyTorch is installed by scripts/setup_env.sh from TORCH_INDEX_URL,
+# because CUDA wheel mirrors vary by server.
+accelerate>=0.33
+datasets>=2.20
+matplotlib>=3.8
+modelscope>=1.17
+numpy>=1.26
+pandas>=2.2
+peft>=0.11
+Pillow>=10.4
+requests>=2.32
+scikit-learn>=1.4
+seaborn>=0.13
+sentencepiece>=0.2
+tabulate>=0.9
+tiktoken>=0.7
+tqdm>=4.66
+transformers>=4.44,<5
+wandb>=0.17
