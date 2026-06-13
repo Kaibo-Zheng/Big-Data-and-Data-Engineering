@@ -1,7 +1,7 @@
 # 基于 DeBERTa-LoRA 的大模型生成文本检测与溯源系统
 
 本仓库是《大数据与数据工程》课程大作业项目，配套报告见
-`report/report.tex`。项目选取 CCKS2026 天池“任务六：大模型生成文本检测及溯源”作为案例，围绕原始 JSONL 数据处理、统计分析、可视化展示、基线模型、DeBERTa-LoRA 多卡训练、推理提交和结果归档，完成一个端到端的数据工程实践流程。
+`report/report.pdf`。项目选取 CCKS2026 天池“任务六：大模型生成文本检测及溯源”作为案例，围绕原始 JSONL 数据处理、统计分析、可视化展示、基线模型、DeBERTa-LoRA 多卡训练、推理提交和结果归档，完成一个端到端的数据工程实践流程。
 
 实验硬件为 **4 张 NVIDIA RTX 5090**。最终模型在本地验证集上取得检测 Macro-F1 `0.9922`、溯源 Macro-F1 `0.8797`，按官方公式估计综合分数为 `0.9697`。
 
@@ -90,10 +90,10 @@ train/              基线、单进程训练、DDP 训练和共享训练逻辑
 eval/               推理入口
 tool/               数据画像、结果汇总、logo 素材处理
 visualization/      报告图生成脚本与绘图样式
-Illustration/       报告插图，当前对应 report.tex 中的图 1-4
+Illustration/       报告插图，当前对应报告中的图 1-6
 result/csv/         指标、训练曲线、预测分布等结果表
 result/submissions/ 预测明细与提交文件
-report/             课程报告 LaTeX 源文件
+report/             课程报告 PDF
 docs/               赛题要求和课程要求整理
 scripts/            环境安装与训练工作流脚本
 utils/              共享路径和标签元信息
@@ -246,10 +246,10 @@ cp result/submissions/submit_deberta_lora.jsonl result/submissions/submit.jsonl
 
 ## 报告与图表
 
-报告源文件：
+课程报告：
 
 ```text
-report/report.tex
+report/report.pdf
 ```
 
 报告插图：
@@ -259,15 +259,18 @@ Illustration/1.png    项目动机
 Illustration/2.png    数据集分析
 Illustration/3.png    模型结构
 Illustration/4.png    实验结果汇总
+Illustration/5.png    项目实现流程
+Illustration/6.png    方法性能对比
 ```
 
 重新生成代码绘制的报告图：
 
 ```bash
 python visualization/plot_all.py
+python visualization/plot_report_extra_figures.py
 ```
 
-该命令会先汇总结果指标，再生成数据分析图与实验结果图。若缺少模型家族 logo，可先运行：
+前一个命令会先汇总结果指标，再生成数据分析图与实验结果汇总图；后一个命令用于生成方法性能对比图。若缺少模型家族 logo，可先运行：
 
 ```bash
 python tool/fetch_logo_assets.py
@@ -286,7 +289,7 @@ model/ 或基座模型下载说明
 ckpt/
 result/
 Illustration/
-report/report.tex 与编译后的报告 PDF
+report/report.pdf
 README.md
 requirements.txt
 ```
